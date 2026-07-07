@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Trip Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>SPEND. TRACK. REPEAT.</h1>
+
+        <!-- DASHBOARD -->
+        <div class="dashboard">
+
+            <div class="card">
+                <h2>Total Expenses</h2>
+                <p id="totalExpense">₹0</p>
+            </div>
+
+            <div class="card">
+                <h2>Total Trips</h2>
+                <p id="totalTrips">0</p>
+            </div>
+
+        </div>
+
+        <div class="chart-container">
+
+    <h2>Expense Analytics</h2>
+
+    <canvas id="expenseChart"></canvas>
+
+        </div>
+
+
+        <!-- FORM -->
+        <form id="expenseForm">
+
+            <input type="text"
+                   id="trip"
+                   placeholder="Trip Name"
+                   required>
+
+            <input type="text"
+                   id="category"
+                   placeholder="Category"
+                   required>
+
+            <input type="number"
+                   id="amount"
+                   placeholder="Amount"
+                   required>
+
+            <button type="submit">
+                Add Expense
+            </button>
+
+        </form>
+
+
+        <!-- EXPENSE LIST -->
+        <h2>All Expenses</h2>
+
+        <div id="expenseList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
